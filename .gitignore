@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+.check
+# Copied or generated into the fixture app by playground/sync.mjs
+playground/fixture/src/audit/AuditCanvas.tsx
+playground/fixture/src/audit/AuditPage.tsx
+playground/fixture/src/audit/audit.scan.json
+playground/fixture/src/audit/specimens.generated.tsx

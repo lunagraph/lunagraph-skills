@@ -1,0 +1,162 @@
+/* Stands in for an app's global styles: specimens should pick these up. */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: #1c1917;
+}
+
+/* Audit page chrome, built on the canvas variables. */
+.layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  font: 14px/1.4 var(--lgac-font);
+  color: var(--lgac-text);
+}
+.inventory {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 224px;
+}
+.groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 1100px;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.group header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tile {
+  border: 1px solid var(--lgac-border);
+  border-radius: 8px;
+  background: var(--lgac-surface);
+  padding: 12px;
+}
+.strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 56px;
+  /* Specimens show the app's own type and colour, not the audit chrome's. */
+  font-family: Georgia, serif;
+  color: #1c1917;
+}
+.wrap {
+  flex-wrap: wrap;
+  width: 1060px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+.row {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  cursor: pointer;
+}
+.row:hover {
+  color: var(--lgac-accent);
+}
+.circle {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--lgac-muted);
+  border-radius: 999px;
+}
+.count {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+.muted {
+  color: var(--lgac-muted);
+}
+.small {
+  font-size: 12px;
+}
+.pill {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #e4e4e7;
+  font-size: 12px;
+}
+.pill.amber {
+  background: var(--lgac-amber-bg);
+  color: var(--lgac-amber);
+}
+.pill.outline {
+  background: none;
+  border: 1px solid var(--lgac-border);
+}
+.dashed {
+  outline: 1px dashed var(--lgac-muted);
+  border-radius: 6px;
+}
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+  padding: 0 12px;
+}
+.bar code {
+  font: 12px var(--lgac-mono);
+  color: var(--lgac-muted);
+}
+.next {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 340px;
+  padding: 12px 14px;
+}
+.next-row {
+  padding: 6px 0;
+}
+
+/* Stand-ins for the audited app's own components. */
+.demo-button {
+  border: 0;
+  padding: 8px 14px;
+  font: inherit;
+  font-size: 14px;
+}
+.demo-input {
+  width: 220px;
+  padding: 8px 10px;
+  border: 1px solid #d6d3d1;
+  border-radius: 8px;
+  font: inherit;
+}
+.demo-backdrop {
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+.demo-dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+}
+.demo-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

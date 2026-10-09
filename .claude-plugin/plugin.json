@@ -1,0 +1,11 @@
+{
+  "name": "lunagraph",
+  "description": "Free skills from Lunagraph. Audit your design system from inside your own app, with your own coding agent.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Lunagraph",
+    "url": "https://lunagraph.com"
+  },
+  "homepage": "https://lunagraph.com",
+  "repository": "https://github.com/lunagraph/lunagraph-skills"
+}

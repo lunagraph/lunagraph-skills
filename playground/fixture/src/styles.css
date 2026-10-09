@@ -1,0 +1,44 @@
+/* The fake app's global styles. Stands in for Tailwind and a design system's tokens. */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: #1c1917;
+  background: #fafaf9;
+}
+.btn { display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 8px; font: inherit; font-size: 14px; cursor: pointer; }
+.btn-md { height: 36px; padding: 0 16px; }
+.btn-sm { height: 30px; padding: 0 12px; font-size: 13px; }
+.btn-icon { width: 36px; height: 36px; padding: 0; }
+.btn-default { background: #1c1917; color: #fff; }
+.btn-outline { background: #fff; color: #1c1917; box-shadow: inset 0 0 0 1px #d6d3d1; }
+.btn-ghost { background: transparent; color: #1c1917; }
+.btn-destructive { background: #dc2626; color: #fff; }
+.btn-loading { opacity: 0.6; }
+/* Utilities the fixture's call sites use to restyle components. */
+.rounded-full { border-radius: 999px; }
+.shadow-lg { box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }
+.ml-2 { margin-left: 8px; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; }
+.badge-neutral { background: #e7e5e4; }
+.badge-success { background: #dcfce7; color: #166534; }
+.badge-warning { background: #fef3c7; color: #92400e; }
+.text-sm { font-size: 13px; margin: 0; }
+.text-md { font-size: 15px; margin: 0; }
+.text-lg { font-size: 20px; margin: 0; }
+.text-muted { color: #78716c; }
+.dialog-backdrop { position: fixed; inset: 0; display: grid; place-items: center; background: rgba(0, 0, 0, 0.4); }
+.dialog-content { display: flex; flex-direction: column; gap: 12px; width: 300px; padding: 20px; border-radius: 12px; background: #fff; }
+.dialog-right { justify-self: end; align-self: stretch; border-radius: 0; }
+.dialog-title { margin: 0; font-size: 17px; }
+.dialog-footer { display: flex; justify-content: flex-end; gap: 8px; }
+/* Hand-rolled bits. */
+.fixed { position: fixed; }
+.inset-0 { inset: 0; }
+.rounded { border-radius: 4px; }
+.px-3 { padding-left: 12px; padding-right: 12px; }
+.py-1 { padding-top: 4px; padding-bottom: 4px; }
+.raw-danger { border: 0; background: #e11d48; color: #fff; font: inherit; }
+.raw-link { border: 0; background: none; color: #4338ca; text-decoration: underline; font: inherit; }
+.raw-input { padding: 6px 10px; border: 1px solid #a8a29e; border-radius: 2px; font: inherit; }
+.raw-backdrop { display: grid; place-items: center; background: rgba(15, 23, 42, 0.7); }
+.raw-modal { display: flex; flex-direction: column; gap: 12px; padding: 16px; background: #fff; }

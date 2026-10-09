@@ -1,0 +1,15 @@
+{
+  "name": "lunagraph-skills",
+  "description": "Free agent skills from Lunagraph.",
+  "owner": {
+    "name": "Lunagraph",
+    "url": "https://lunagraph.com"
+  },
+  "plugins": [
+    {
+      "name": "lunagraph",
+      "description": "Design system audit: a live inventory of your components at /audit, with versions, hand-rolled copies, and what to unify.",
+      "source": "./"
+    }
+  ]
+}
