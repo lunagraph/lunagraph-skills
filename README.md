@@ -1,18 +1,22 @@
 # Lunagraph skills
 
-Free agent skills from [Lunagraph](https://lunagraph.com), the design canvas for
-real HTML, CSS, and React code.
+Free design skills for coding agents, from [Lunagraph](https://lunagraph.com),
+the design canvas for real HTML, CSS, and React code.
 
-They run in your own repo with your own coding agent. You do not need Lunagraph
-installed: without it, the audit is a read-only canvas inside your app. With
-it, the same audit is drawn on the Lunagraph canvas, where everything in it can
-be edited. The skill asks which you want the first time.
+Four jobs, four skills. Each one has fixed steps and a check at the end, so the
+agent cannot quietly skip the part where it looks at what it made.
 
 ## Skills
 
 | Skill | What it does |
 | --- | --- |
-| [`audit`](skills/audit/SKILL.md) | Scans the whole codebase, lists every component with its uses, and shows your shared primitives as the real components with every variant. Ask for one group ("audit the buttons") to go deep: every local wrapper, every hand-rolled copy, every call site, and a recommendation. A script does the counting, so nothing is estimated. |
+| [`design`](skills/design/SKILL.md) | Designs a website, product UI, graphic, design system or prototype on the canvas. Writes a six-line brief first, draws two or three meaningfully different directions, picks one, and reviews it against a checklist before calling it done. |
+| [`animate`](skills/animate/SKILL.md) | Storyboards a product story on the canvas, with a caption per beat, before anything moves. Then plans transitions, animates, inspects the in-between frames and the loop seam, and verifies the exports that are actually supported. |
+| [`critique`](skills/critique/SKILL.md) | Reviews an existing design, animation, prototype or running UI from rendered evidence and scores it criterion by criterion. Never edits anything. |
+| [`implement`](skills/implement/SKILL.md) | Builds a reviewed canvas design in your codebase with your components and tokens, then verifies the running app: routes, states, themes, a width sweep, and real before-and-after captures for a PR. |
+
+They are separate on purpose. Ask for the one you want. A critique does not
+turn into a redesign, and a design does not turn into a PR, unless you ask.
 
 ## Install
 
@@ -23,71 +27,46 @@ be edited. The skill asks which you want the first time.
 /plugin install lunagraph@lunagraph-skills
 ```
 
-### Codex and other agents
+### Codex, Cursor and other agents
 
 ```sh
 npx skills add lunagraph/lunagraph-skills
+```
+
+Or one skill:
+
+```sh
+npx skills add lunagraph/lunagraph-skills --skill critique
 ```
 
 ### By hand
 
 ```sh
 git clone https://github.com/lunagraph/lunagraph-skills
-cp -R lunagraph-skills/skills/audit ~/.claude/skills/
+cp -R lunagraph-skills/skills/* ~/.claude/skills/
 ```
 
 ## Use
 
-Open your agent in the repo you want to audit.
-
 ```
-/lunagraph:audit
-```
-
-It scans the codebase and adds a dev-only page to your app. Open
-`localhost:3000/audit` (your port may differ) to see the inventory.
-
-Then go deep on one group:
-
-```
-/lunagraph:audit modals
+/lunagraph:design a pricing page for this app, two directions
+/lunagraph:animate the launch story for agents
+/lunagraph:critique the checkout flow at localhost:3000
+/lunagraph:implement the pricing page from the canvas
 ```
 
-That draws every local version and hand-rolled copy of your modals side by
-side, lists every call site, marks where they differ, and recommends which one
-to keep. The first run does not do this for every group; you choose which ones
-are worth it.
+Outside Claude Code, ask in plain words: "design a pricing page, two
+directions", "critique the checkout flow".
 
-Outside Claude Code, ask in plain words: "audit the design system in this
-repo", then "audit the modals".
-
-The audit only adds its own folder. It does not change your components. To
-remove it, delete that folder.
+`design`, `animate` and `implement` need a canvas. In a Lunagraph chat they
+draw directly. In a terminal agent they hand over: start a chat in Lunagraph
+with your repo's folder attached, or click "Connect external MCP agent" in
+Lunagraph and run the command it gives you. `critique` works anywhere, from
+screenshots or a running app.
 
 ## Contributing
 
 Each skill is a folder under `skills/` with a `SKILL.md`: YAML frontmatter
 (`name`, `description`) followed by the instructions. The folder name must match
-`name`.
-
-What ships inside the audit skill:
-
-- `scripts/scan.mjs` reads every source file and writes what exists as JSON.
-- `scripts/specimens.mjs` writes a specimen for every component that has a
-  self-contained call site, copied as written.
-- `scripts/check.mjs` compares what the audit renders against the scan, and
-  rejects content that is not from the codebase.
-- `canvas/AuditPage.tsx` is the whole audit page, driven by the scan.
-- `canvas/AuditCanvas.tsx` is the pan-and-zoom canvas the page sits on.
-
-To work on them:
-
-```sh
-cd playground
-npm install
-npm run dev     # the audit page for a small fake app in playground/fixture
-npm run check   # scanner and checker tests, then the page and canvas in your installed Chrome
-```
-
-`/?canvas` in the playground shows the canvas on its own. The `.jsx` copies in
-`canvas/` are generated from the `.tsx` files by `npm run sync`.
+`name`. Under `references/` each skill carries the visual checklist and the
+rating criteria it uses, so it can be installed on its own.

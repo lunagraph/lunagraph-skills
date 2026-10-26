@@ -1,5 +1,0 @@
-{
-  "name": "acme-app",
-  "private": true,
-  "description": "A small fake app the audit scanner and page are tested against. Not a real project."
-}

@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "lunagraph",
-      "description": "Design system audit: a live inventory of your components at /audit, with versions, hand-rolled copies, and what to unify.",
+      "description": "Design skills for coding agents: design, animate, critique and implement on the Lunagraph canvas.",
       "source": "./"
     }
   ]

@@ -1,0 +1,13 @@
+interface:
+  display_name: Animate
+  short_description: Storyboard, animate and verify a product story
+  default_prompt: Use $animate to storyboard and animate this product story.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

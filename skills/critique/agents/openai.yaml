@@ -1,0 +1,13 @@
+interface:
+  display_name: Critique
+  short_description: Score an existing design from rendered evidence
+  default_prompt: Use $critique to review this design without changing it.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

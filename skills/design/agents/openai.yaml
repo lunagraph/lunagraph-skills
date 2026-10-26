@@ -1,0 +1,13 @@
+interface:
+  display_name: Design
+  short_description: Design on the Lunagraph canvas, in variants, and check it
+  default_prompt: Use $design to explore and refine this on the canvas.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

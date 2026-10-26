@@ -1,0 +1,13 @@
+interface:
+  display_name: Implement
+  short_description: Build a reviewed design in the codebase and verify it
+  default_prompt: Use $implement to build this reviewed design and test it.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
