@@ -44,15 +44,14 @@ Six lines, in the chat, from the request, the product and the codebase:
   code and the running app as the truth about what exists. Never invent
   controls, behaviour or claims.
 - **Preserve.** Approved work, the user's own edits, handwritten todos.
-- **Graphic or text.** Which areas get a graphic and what each one says. A
-  missing "text only" label is not permission to invent a graphic. A graphic
-  the work needs that does not exist yet is yours to make: a demo animation,
-  a step frame, a panel in the state the story needs. Build product UI from
-  its real source, the component code, its copy and its tokens, never from
-  memory or a description. Only when no source can be found is it named in
-  text instead. When the graphic moves, follow the `animate` skill's
-  storyboard-first steps for it; do not reuse a frame that shows something
-  else because it already exists.
+- **Graphics.** Which areas get a graphic and what each one shows. Every
+  graphic the work calls for is yours to make, including demo animations
+  and step frames that do not exist yet. Build product UI from its real
+  source, the component code, its copy and its tokens, never from memory or
+  a description. When a graphic moves, follow the `animate` skill for it:
+  storyboard first, then motion. Never reuse a frame that shows something
+  else because it already exists, and do not add graphics the work does not
+  call for.
 - **Claims.** Every factual claim the page will make, each traced to where it
   is true in the product: a file, a screen, a capture. Claims handed to you in
   the brief, and copy already live on the site, are checked the same way; a
