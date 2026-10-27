@@ -108,7 +108,10 @@ A "done" message is not evidence. Screenshot the result and go through
   the same width as its neighbours.
 - Typography, spacing, radii and controls match the references. No pattern
   transplanted from elsewhere because it exists.
-- Nothing clipped by accident. Intentional overflow still intentional.
+- Nothing clipped by accident. Intentional overflow still intentional. A
+  graphic shows every section it names: a board taller than its box is
+  scaled to fit, never cut under a heading. A crop of the demo is still the
+  demo; a step needs its own frame.
 - Both themes, muted and disabled states, long content.
 - Websites: sweep the width from very narrow to very wide and back, both
   sides of every breakpoint. Record the range and every failure. If you can

@@ -31,7 +31,9 @@ record where it is, what is wrong, what is expected, the evidence, and the fix.
 ## Bounds
 
 - Dimensions, alignment, aspect ratio and placement of every graphic.
-- No accidental cropping or page overflow. Intentional overflow kept.
+- No accidental cropping or page overflow. Intentional overflow kept. A
+  graphic shows every section it names; a board taller than its box is
+  scaled to fit, never cut under a heading.
 - Clipping is not "fixed" by disabling containment everywhere.
 - Adjacent graphics share dimensions and framing.
 - Step graphics: each a different, settled moment; a frame caught
