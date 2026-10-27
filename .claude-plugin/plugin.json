@@ -1,11 +1,21 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "lunagraph",
-  "description": "Free design skills from Lunagraph: design, animate, critique and implement, with your own coding agent.",
-  "version": "0.2.0",
+  "description": "Free design skills from Lunagraph: design, animate, critique and implement, with your own coding agent. Connects the agent to the Lunagraph desktop app's canvas.",
+  "version": "0.3.0",
+  "logo": "skills/design/assets/icon.svg",
   "author": {
     "name": "Lunagraph",
     "url": "https://lunagraph.com"
   },
   "homepage": "https://lunagraph.com",
-  "repository": "https://github.com/lunagraph/lunagraph-skills"
+  "repository": "https://github.com/lunagraph/lunagraph-skills",
+  "license": "MIT",
+  "keywords": ["design", "ui", "canvas", "animation", "design-system", "lunagraph", "mcp"],
+  "mcpServers": {
+    "lunagraph": {
+      "type": "http",
+      "url": "http://127.0.0.1:21209/mcp"
+    }
+  }
 }

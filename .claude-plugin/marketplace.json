@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "lunagraph",
-      "description": "Design skills for coding agents: design, animate, critique and implement on the Lunagraph canvas.",
+      "description": "Design skills for coding agents: design, animate, critique and implement on the Lunagraph canvas. Connects the agent to the Lunagraph desktop app.",
       "source": "./"
     }
   ]

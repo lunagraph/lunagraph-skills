@@ -10,10 +10,14 @@ you animate it.
 
 ## Where to draw
 
-Same as the `design` skill. With Lunagraph's canvas tools in the session, load
-Lunagraph's `lunagraph-use` skill, then the design skill it names, and draw.
-Without them, hand over to Lunagraph and stop. Never fake motion with a
-generated video, a GIF of something else, or by driving the app's UI.
+Same as the `design` skill. With Lunagraph's canvas tools in the session
+(always in a Lunagraph chat; in a terminal agent with the `lunagraph` plugin
+whenever the desktop app is open, after `project_pick`), load Lunagraph's
+`lunagraph-use` skill and the design skill it names when they are listed,
+otherwise follow the server's instructions and tool descriptions, and draw. If the tools
+are listed but fail to connect, ask the user to open Lunagraph. Without them,
+hand over to Lunagraph and stop. Never fake motion with a generated video, a
+GIF of something else, or by driving the app's UI.
 
 ## 1. Story, before anything moves
 

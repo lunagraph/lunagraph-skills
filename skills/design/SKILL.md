@@ -13,16 +13,23 @@ say it is done. Not code. Not a critique of someone else's work.
 Settle this first. Take the first case that applies.
 
 1. **This session has Lunagraph's canvas tools** (an MCP server named
-   `lunagraph`, with `canvas_add`, `canvas_read`, `take_screenshot`). Load
-   Lunagraph's own `lunagraph-use` skill, then the design skill it names. Those
-   teach the canvas. This skill adds the brief, the variants and the review
-   gate on top. Draw.
-2. **This is a terminal agent in a repo with no canvas tools.** You cannot
-   draw here. Hand over and stop: in Lunagraph, start a chat with this repo's
-   folder attached and ask for the design there, or click "Connect external
-   MCP agent", run the command it gives in a terminal, and start a new
-   session. Never guess the connection address. Do not substitute a static
-   HTML page, a screenshot, generated image or drive the app's UI with a mouse.
+   `lunagraph`, with `canvas_add`, `canvas_read`, `take_screenshot`). In a
+   Lunagraph chat they are always there. In a terminal agent with the
+   `lunagraph` plugin installed they are there whenever the Lunagraph desktop
+   app is open: call `project_list`, then `project_pick` to bind the file you
+   are designing in. If Lunagraph's own `lunagraph-use` skill is listed,
+   load it, then the design skill it names; they teach the canvas. Over a
+   plugin connection it is not, so follow the server's instructions and the
+   tool descriptions instead: screenshot before and after every change, and
+   prefer `canvas_edit` and `canvas_insert` over redrawing. This skill adds
+   the brief, the variants and the review gate on top. Draw.
+2. **The tools are listed but fail to connect.** The desktop app is not
+   running. Ask the user to open Lunagraph, then retry.
+3. **No canvas tools at all.** You cannot draw here. Hand over and stop: in
+   Lunagraph, start a chat with this repo's folder attached and ask for the
+   design there, or click "Connect external MCP agent" in Lunagraph and run
+   the command it gives. Do not substitute a static HTML page, a screenshot, a
+   generated image, or drive the app's UI with a mouse.
 
 ## 1. Brief, before the first canvas write
 

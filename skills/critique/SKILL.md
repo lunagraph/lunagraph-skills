@@ -16,7 +16,9 @@ Look at the real thing, say what is wrong and where, score it, stop.
 - **Rendered evidence only.** Screenshots the user supplied, the canvas
   through Lunagraph's tools, or a running preview. Source code alone is not
   evidence of how something looks. Open Lunagraph only to reach the canvas you
-  were asked about.
+  were asked about; with the `lunagraph` plugin and the desktop app open, bind
+  the file with `project_pick` and read it with `canvas_read` and
+  `take_screenshot`.
 - **Do not take the designer's word.** A "done" reply, a self-score, or a
   plausible list of tool calls proves nothing. Neither does your own
   walkthrough prove that a human can use it.

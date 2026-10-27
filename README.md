@@ -27,6 +27,12 @@ turn into a redesign, and a design does not turn into a PR, unless you ask.
 /plugin install lunagraph@lunagraph-skills
 ```
 
+The plugin bundles the four skills and the connection to the Lunagraph desktop
+app's MCP server, so they are one install, one version, and one namespace
+(`/lunagraph:design`). Auto-update is off for third-party marketplaces; turn
+it on under the marketplaces tab in `/plugin`, or update by hand with
+`claude plugin update lunagraph@lunagraph-skills`.
+
 ### Codex, Cursor and other agents
 
 ```sh
@@ -59,10 +65,12 @@ Outside Claude Code, ask in plain words: "design a pricing page, two
 directions", "critique the checkout flow".
 
 `design`, `animate` and `implement` need a canvas. In a Lunagraph chat they
-draw directly. In a terminal agent they hand over: start a chat in Lunagraph
-with your repo's folder attached, or click "Connect external MCP agent" in
-Lunagraph and run the command it gives you. `critique` works anywhere, from
-screenshots or a running app.
+draw directly. In Claude Code, the plugin connects to the Lunagraph desktop
+app on its own: open Lunagraph, and the agent's `lunagraph` tools reach your
+files. Other agents hand over: start a chat in Lunagraph with your repo's
+folder attached, or click "Connect external MCP agent" in Lunagraph and run
+the command it gives you. `critique` works anywhere, from screenshots or a
+running app.
 
 ## Contributing
 

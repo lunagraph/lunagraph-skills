@@ -15,9 +15,13 @@ prove the running result matches it.
 - **The canvas decides how it looks.** Build what was reviewed. When something
   is missing or does not work in code, take that gap back to the canvas and
   get it designed there, then build the revised version. Do not invent the
-  visual answer in code. In a Lunagraph session, load `lunagraph-use` and
-  Lunagraph's `lunagraph-implement` skill, which teach reading the canvas and
-  the codebase's conventions.
+  visual answer in code. With Lunagraph's canvas tools in the session (a
+  Lunagraph chat, or a terminal agent with the `lunagraph` plugin and the
+  desktop app open, after `project_pick`), load `lunagraph-use` and
+  Lunagraph's `lunagraph-implement` skill when they are listed; they teach
+  reading the canvas and the codebase's conventions. Otherwise read the
+  design with `canvas_read` and `take_screenshot` and follow the repo's own
+  conventions.
 - **Shared components stay shared.** When the design needs a change to one,
   show every consumer it affects and let the user choose: update the component
   or make an exception. Never overwrite it to fit.
