@@ -45,7 +45,13 @@ Six lines, in the chat, from the request, the product and the codebase:
   controls, behaviour or claims.
 - **Preserve.** Approved work, the user's own edits, handwritten todos.
 - **Graphic or text.** Which areas get a graphic and what each one says. A
-  missing "text only" label is not permission to invent a graphic.
+  missing "text only" label is not permission to invent a graphic. A product
+  UI that exists in no real capture is named in text, never drawn.
+- **Claims.** Every factual claim the page will make, each traced to where it
+  is true in the product: a file, a screen, a capture. Claims handed to you in
+  the brief, and copy already live on the site, are checked the same way; a
+  brief can be wrong and live copy can be stale. A claim with no source is cut
+  or marked "to confirm" in the delivery. Keep this table; you deliver it.
 
 Ask one question only when an open choice changes the value or the scope.
 Otherwise state the assumption and go.
@@ -66,8 +72,15 @@ this an exception.
 A "done" message is not evidence. Screenshot the result and go through
 [references/checklist.md](references/checklist.md). The short version:
 
-- Text says what the brief says. Labels work without the icons. Logos are the
-  real ones.
+- Open the reference beside the work and compare section by section: hero,
+  demo, steps, call to action, cards, footer. Whole-page impressions miss a
+  demo that lost its title or a card row that drifted.
+- Re-read every sentence against the claim table. Text says what the brief
+  says only where the brief is true. Labels work without the icons. Logos are
+  the real ones.
+- Each step graphic shows its own settled moment: no two steps share a
+  frame, no frame is caught mid-transition, and each frame shows the thing
+  its caption names, or the caption changes.
 - Typography, spacing, radii and controls match the references. No pattern
   transplanted from elsewhere because it exists.
 - Nothing clipped by accident. Intentional overflow still intentional.
@@ -86,6 +99,8 @@ and the open issue. Do not average a failed critical path away.
 
 - The page and frame names, and the element ids of what changed.
 - The chosen direction and why, and the references it follows.
+- The claim table: each claim, its source, or "to confirm".
+- The frames used: which real capture or story moment each graphic is.
 - What was tested: widths, themes, states.
 - The scorecard and every unresolved decision.
 

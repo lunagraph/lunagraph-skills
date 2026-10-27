@@ -8,15 +8,18 @@ record where it is, what is wrong, what is expected, the evidence, and the fix.
 - The visual explains the feature and the benefit without a caption.
 - Rate the takeaway separately from how well the shell is drawn.
 - Labels are understandable without their icons.
-- Requested removals are gone. Claims are supported by the product.
+- Requested removals are gone. Every claim is supported by the product,
+  including claims that arrived in the brief or were already live.
 - Product graphics are built from the real editor, shell, chat, panels and
-  controls. Simplified to clarify, never to invent.
+  controls. Simplified to clarify, never to invent. A UI with no real capture
+  is named in text, not drawn.
 - Variants are compared against the user's job, not novelty.
 
 ## Identity
 
 - Typography, spacing, dividers, cards, controls, radii and tokens match the
-  references.
+  references, checked section by section with the reference open beside the
+  work.
 - No pattern transplanted from another part of the product because it exists.
 - Logos are verified, legible in each theme.
 - Popovers sit next to their triggers. Arrows point at the right thing.
@@ -29,6 +32,9 @@ record where it is, what is wrong, what is expected, the evidence, and the fix.
 - No accidental cropping or page overflow. Intentional overflow kept.
 - Clipping is not "fixed" by disabling containment everywhere.
 - Adjacent graphics share dimensions and framing.
+- Step graphics: each a different, settled moment; a frame caught
+  mid-transition, or reused from another step or the demo, is a defect.
+- The frame shows what its caption names. If it cannot, the caption changes.
 - At narrow widths, padding shrinks before content does.
 
 ## Readability and themes
