@@ -39,6 +39,10 @@ record where it is, what is wrong, what is expected, the evidence, and the fix.
   disclosing the reuse does not clear it.
 - The frame shows what its caption names. If it cannot, the caption changes.
 - One project per page: every graphic shows the same palette, names and app.
+- No stage chrome from another medium (email or video eyebrows, title bands,
+  player chips) inside a product graphic.
+- The phone demo is the desktop demo scaled, never a crop that loses the
+  header or a section.
 - The smallest label in every graphic is readable at the size shown; shrink
   is not a crop. A graphic that fills a column is the same width as its
   neighbours.

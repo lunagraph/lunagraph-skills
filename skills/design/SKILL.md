@@ -56,6 +56,10 @@ Six lines, in the chat, from the request, the product and the codebase:
   a visitor reads it: a list followed by a place ("tokens, icons and
   components, ready in the panel") claims the place for the whole list. If
   one item is not true there, the sentence is rewritten, not footnoted.
+  Start the table from the brief itself: every sentence in its "what the
+  product does" list is a claim, traced one by one before any copy is
+  written. "Unverified" is an allowed result; a claim you did not trace is
+  not.
 
 Ask one question only when an open choice changes the value or the scope.
 Otherwise state the assumption and go.
@@ -77,8 +81,16 @@ A "done" message is not evidence. Screenshot the result and go through
 [references/checklist.md](references/checklist.md). The short version:
 
 - Open the reference beside the work and compare section by section: hero,
-  demo, steps, call to action, cards, footer. Whole-page impressions miss a
-  demo that lost its title or a card row that drifted.
+  demo, steps, call to action, cards, footer, for the desktop frame and
+  again for the phone frame. Whole-page impressions miss a demo that lost
+  its title or a card row that drifted. Nav and footer links are the live
+  site's, not a concept component's.
+- The phone demo is the desktop demo scaled to the column, never a crop that
+  loses the header or a section. If it cannot be read at that size, change
+  what the demo shows on both frames.
+- A product graphic is a capture of the product. A stage made for another
+  medium (an email or video story with its own eyebrow, title band or player)
+  is cropped to the product it contains; the stage chrome never ships.
 - Re-read every sentence against the claim table. Text says what the brief
   says only where the brief is true. Labels work without the icons. Logos are
   the real ones.
