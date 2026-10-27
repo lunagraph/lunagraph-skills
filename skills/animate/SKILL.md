@@ -1,6 +1,6 @@
 ---
 name: animate
-description: Storyboard, animate and verify a product animation or motion graphic on the Lunagraph canvas, for a website or an exported video. Use for launch videos, feature stories, transitions, pacing, loops, playback controls and motion polish. Storyboards before motion, always. For static design use design, for critique use critique.
+description: Storyboard, animate and verify a product animation or motion graphic on the Lunagraph canvas, for a website or an exported video. Use for launch videos, feature stories, transitions, pacing, loops, playback controls and motion polish. Storyboards before motion, always. The design skill uses this one for animations inside a page or product design; for critique use critique.
 ---
 
 # Animate

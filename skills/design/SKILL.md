@@ -1,142 +1,119 @@
 ---
 name: design
-description: Design or revise a website, product UI, static graphic, design system or clickable prototype on the Lunagraph canvas, from a brief, a reference or an existing design. Use when the user wants something designed, explored as variants, or polished, and before changing how UI looks in code ("make this look good"): mock it on the canvas first. For motion use animate, for critique without edits use critique, for code use implement.
+description: Design or revise a website page, product UI, static graphic, design system or clickable prototype on the Lunagraph canvas, including the graphics and animations the design needs. Use when the user wants something designed, a feature or landing page made, variants explored or a design polished, and before changing how UI looks in code ("make this look good"): mock it on the canvas first. For an animation on its own use animate, for critique without edits use critique, for code use implement.
 ---
 
 # Design
 
-Make the thing on the canvas, in a few directions, and check it before you
-say it is done. Not code. Not a critique of someone else's work.
+Make the thing on the canvas, in a few directions, and look at it before you
+say it is done. The canvas is the deliverable, not code.
 
 ## Where to draw
 
-Settle this first. Take the first case that applies.
+1. **Lunagraph's canvas tools are in this session** (an MCP server named
+   `lunagraph`: `canvas_add`, `canvas_read`, `take_screenshot`). In a Lunagraph
+   chat they always are. In a terminal agent with the `lunagraph` plugin they
+   are while the desktop app is open: call `project_list`, then `project_pick`.
+   If Lunagraph's own `lunagraph-use` skill is listed, load it first; it teaches
+   the canvas. Otherwise follow the server's instructions and tool
+   descriptions.
+2. **The tools are listed but fail to connect.** The desktop app is closed. Ask
+   the user to open it, then retry.
+3. **No canvas tools.** Hand over and stop: start a chat in Lunagraph with this
+   repo's folder attached, or use "Connect external MCP agent" in Lunagraph.
+   A static HTML file, a generated image or clicking through the app's UI is
+   not a substitute; the user reviews on the canvas.
 
-1. **This session has Lunagraph's canvas tools** (an MCP server named
-   `lunagraph`, with `canvas_add`, `canvas_read`, `take_screenshot`). In a
-   Lunagraph chat they are always there. In a terminal agent with the
-   `lunagraph` plugin installed they are there whenever the Lunagraph desktop
-   app is open: call `project_list`, then `project_pick` to bind the file you
-   are designing in. If Lunagraph's own `lunagraph-use` skill is listed,
-   load it, then the design skill it names; they teach the canvas. Over a
-   plugin connection it is not, so follow the server's instructions and the
-   tool descriptions instead: screenshot before and after every change, and
-   prefer `canvas_edit` and `canvas_insert` over redrawing. This skill adds
-   the brief, the variants and the review gate on top. Draw.
-2. **The tools are listed but fail to connect.** The desktop app is not
-   running. Ask the user to open Lunagraph, then retry.
-3. **No canvas tools at all.** You cannot draw here. Hand over and stop: in
-   Lunagraph, start a chat with this repo's folder attached and ask for the
-   design there, or click "Connect external MCP agent" in Lunagraph and run
-   the command it gives. Do not substitute a static HTML page, a screenshot, a
-   generated image, or drive the app's UI with a mouse.
+## 1. Understand the job
 
-## 1. Brief, before the first canvas write
-
-Six lines, in the chat, from the request, the product and the codebase:
+Write a short brief in the chat before the first canvas write. It keeps you
+designing for a person and a purpose instead of for the brief's wording.
 
 - **Goal.** What the user asked for, in their words.
-- **Who and job.** Who looks at this and what they are trying to do.
-- **Takeaway.** What they should understand or do, and the visible thing that
-  proves it. State this as a hypothesis with its assumptions. Keep it separate
-  from the feature list.
-- **References.** The real UI, tokens and components this must match. Treat
-  code and the running app as the truth about what exists. Never invent
-  controls, behaviour or claims.
-- **Preserve.** Approved work, the user's own edits, handwritten todos.
+- **Who and job.** Who will look at this and what they are trying to get done.
+- **Takeaway.** The one thing they should understand or do, and the visible
+  moment on the page that proves it. That moment is what the main graphic
+  shows.
+- **References.** The real UI, tokens and components this must match, and an
+  existing example of the same kind of page if there is one. The code and the
+  running product are the truth about what exists.
 - **Graphics.** Which areas get a graphic and what each one shows. Every
-  graphic the work calls for is yours to make, including demo animations
-  and step frames that do not exist yet. Build product UI from its real
-  source, the component code, its copy and its tokens, never from memory or
-  a description. When a graphic moves, follow the `animate` skill for it:
-  storyboard first, then motion. Never reuse a frame that shows something
-  else because it already exists, and do not add graphics the work does not
-  call for.
-- **Claims.** Every factual claim the page will make, each traced to where it
-  is true in the product: a file, a screen, a capture. Claims handed to you in
-  the brief, and copy already live on the site, are checked the same way; a
-  brief can be wrong and live copy can be stale. A claim with no source is cut
-  or marked "to confirm" in the delivery. Keep this table; you deliver it.
-  The table is not the check. The check is each final sentence, read the way
-  a visitor reads it: a list followed by a place ("tokens, icons and
-  components, ready in the panel") claims the place for the whole list. If
-  one item is not true there, the sentence is rewritten, not footnoted.
-  Start the table from the brief itself: every sentence in its "what the
-  product does" list is a claim, traced one by one before any copy is
-  written. "Unverified" is an allowed result; a claim you did not trace is
-  not.
+  graphic the design calls for is yours to make, demo animations included.
+  An existing frame that shows something else is not a stand-in, however
+  convenient.
+- **Claims.** Every factual statement the design will make, each traced to
+  where it is true in the product: a file, a screen, a capture.
+
+Claims get their own check because they are where designs go wrong without
+anyone noticing. Briefs are written from memory and live copy goes stale, so a
+statement handed to you is a claim to trace like any other. Trace the brief's
+own description of the product too, sentence by sentence, before writing copy.
+A claim you cannot trace is cut or marked "to confirm" in the delivery.
 
 Ask one question only when an open choice changes the value or the scope.
-Otherwise state the assumption and go.
+Otherwise state your assumption and go.
 
-## 2. Variants
+## 2. Make it
 
-Put two or three **meaningfully different** directions side by side on the
-canvas, each named. Different composition, hierarchy or story, not the same
-layout in three colours. Compare them against the brief and the criteria below,
-say which wins and why, and refine that one. Leave the others on the canvas.
+Put two or three **meaningfully different** directions side by side, each
+named: different story, hierarchy or composition, not one layout in three
+colours. Compare them against the takeaway, say which wins and why, then
+develop that one. Leave the others on the canvas so the user can see what was
+considered.
 
-A design that touches a shared component does not change the component. Show
-the impact on its other uses and ask the user: update the component, or make
-this an exception.
+**Make the graphics, from real source.** A product graphic is only persuasive
+if it is the product. Build editor panels, dialogs and controls from their
+source: the component code, its copy and its tokens. Never draw them from
+memory or a description; an invented control is a promise the product does not
+keep. When a graphic moves, follow the `animate` skill for it, storyboard
+first, and put the result in the design. Write any component files you need in
+a folder of your own, and never edit shared components to fit the design: show
+the user the impact and let them decide.
 
-## 3. Review your own work
+**One project throughout.** Every graphic on a page shows the same app, data
+and palette, so the page tells one story.
 
-A "done" message is not evidence. Screenshot the result and go through
-[references/checklist.md](references/checklist.md). The short version:
+If the kind of page you are making has its own reference in `references/`,
+read it now. Feature pages: [references/feature-pages.md](references/feature-pages.md).
 
-- Open the reference beside the work and compare section by section: hero,
-  demo, steps, call to action, cards, footer, for the desktop frame and
-  again for the phone frame. Whole-page impressions miss a demo that lost
-  its title or a card row that drifted. Nav and footer links are the live
-  site's, not a concept component's.
-- The phone demo is the desktop demo scaled to the column, never a crop that
-  loses the header or a section. If it cannot be read at that size, change
-  what the demo shows on both frames.
-- A product graphic is a capture of the product. A stage made for another
-  medium (an email or video story with its own eyebrow, title band or player)
-  is cropped to the product it contains; the stage chrome never ships.
-- Re-read every sentence against the claim table. Text says what the brief
-  says only where the brief is true. Labels work without the icons. Logos are
-  the real ones.
-- Each step graphic shows its own settled moment: no two steps share a
-  frame, none repeats the demo, no frame is caught mid-transition, and each
-  frame shows the thing its caption names, or the caption changes. Saying
-  that a frame is reused does not make the reuse acceptable; make the frame
-  the step needs.
-- Every graphic on a page shows the same project: one palette, one set of
-  names, one app. A real capture beside a story frame of a different palette
-  is a defect, even if each is real on its own.
-- The smallest label in every graphic is readable at the size it is shown.
-  Shrinking a whole board until its labels are 6px is not a crop; crop to the
-  part that carries the step instead. A graphic that fills a column fills it,
-  the same width as its neighbours.
-- Typography, spacing, radii and controls match the references. No pattern
-  transplanted from elsewhere because it exists.
-- Nothing clipped by accident. Intentional overflow still intentional. A
-  graphic shows every section it names: a board taller than its box is
-  scaled to fit, never cut under a heading. A crop of the demo is still the
-  demo; a step needs its own frame.
-- Both themes, muted and disabled states, long content.
-- Websites: sweep the width from very narrow to very wide and back, both
-  sides of every breakpoint. Record the range and every failure. If you can
-  only sample, say so.
-- Prototypes: state what it tests, make the key task clickable, and have a
-  fresh sub-agent attempt the task with the goal but no click path.
+## 3. Look at it
 
-Fix what you find, recheck the fix and its neighbours. Score each criterion
-that applies in [references/criteria.md](references/criteria.md), with evidence
-and the open issue. Do not average a failed critical path away.
+A "done" message is not evidence. Screenshot what you made and review it as
+the person in the brief would see it. The full list is in
+[references/checklist.md](references/checklist.md); the ones that matter most:
+
+- **Against the reference, part by part.** Put the reference beside the work
+  and compare each section in turn, at each width you designed. A whole-page
+  glance misses the section that drifted.
+- **Every sentence, read the way a visitor reads it.** "Tokens, icons and
+  components, ready in the panel" claims the panel for all three. If one item
+  is not true, rewrite the sentence.
+- **Every graphic earns its place.** Each shows what its caption says, at a
+  size where its smallest label can be read, without repeating another
+  graphic on the page.
+- **Bounds.** Nothing cut off or overflowing by accident, and nothing a
+  graphic names left out of its frame.
+- **Widths.** If the design exists at a URL (localhost, a preview, the live
+  site), put it in a browser frame on the canvas and check it at several
+  widths, both sides of each breakpoint. If it is a canvas mock, either build
+  it to reflow and resize the frame, or check each frame you drew. Say which
+  widths you saw.
+- **Themes and states** the design will meet: light and dark, empty, loading,
+  long content, hover and focus where they apply.
+- **Prototypes:** state what it tests, make the key task clickable, and have a
+  fresh sub-agent try it with the goal but no click path.
+
+Fix what you find, then recheck the fix and what sits next to it. Score the
+criteria in [references/criteria.md](references/criteria.md) with evidence. A
+failed critical check stays failed whatever the other scores are.
 
 ## 4. Deliver
 
-- The page and frame names, and the element ids of what changed.
+- The page, the frame names and element ids, and any files you wrote.
 - The chosen direction and why, and the references it follows.
-- The claim table: each claim, its source, or "to confirm".
-- The frames used: which real capture or story moment each graphic is.
-- What was tested: widths, themes, states.
-- The scorecard and every unresolved decision.
+- The claim table: each claim and its source, or "to confirm".
+- What you checked: widths, themes, states, and how.
+- The scorecard and every open decision.
 
-The canvas is the deliverable. Do not imply it is implemented, approved or
-deployed. If the user wants code, that is the `implement` skill. If they want
-motion, `animate`. Neither redoes approved static work.
+Do not imply the design is implemented, approved or deployed. Code is the
+`implement` skill's job.
