@@ -52,6 +52,10 @@ Six lines, in the chat, from the request, the product and the codebase:
   the brief, and copy already live on the site, are checked the same way; a
   brief can be wrong and live copy can be stale. A claim with no source is cut
   or marked "to confirm" in the delivery. Keep this table; you deliver it.
+  The table is not the check. The check is each final sentence, read the way
+  a visitor reads it: a list followed by a place ("tokens, icons and
+  components, ready in the panel") claims the place for the whole list. If
+  one item is not true there, the sentence is rewritten, not footnoted.
 
 Ask one question only when an open choice changes the value or the scope.
 Otherwise state the assumption and go.
@@ -79,8 +83,17 @@ A "done" message is not evidence. Screenshot the result and go through
   says only where the brief is true. Labels work without the icons. Logos are
   the real ones.
 - Each step graphic shows its own settled moment: no two steps share a
-  frame, no frame is caught mid-transition, and each frame shows the thing
-  its caption names, or the caption changes.
+  frame, none repeats the demo, no frame is caught mid-transition, and each
+  frame shows the thing its caption names, or the caption changes. Saying
+  that a frame is reused does not make the reuse acceptable; crop a
+  different part, pick another moment, or change the step.
+- Every graphic on a page shows the same project: one palette, one set of
+  names, one app. A real capture beside a story frame of a different palette
+  is a defect, even if each is real on its own.
+- The smallest label in every graphic is readable at the size it is shown.
+  Shrinking a whole board until its labels are 6px is not a crop; crop to the
+  part that carries the step instead. A graphic that fills a column fills it,
+  the same width as its neighbours.
 - Typography, spacing, radii and controls match the references. No pattern
   transplanted from elsewhere because it exists.
 - Nothing clipped by accident. Intentional overflow still intentional.

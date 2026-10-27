@@ -9,7 +9,9 @@ record where it is, what is wrong, what is expected, the evidence, and the fix.
 - Rate the takeaway separately from how well the shell is drawn.
 - Labels are understandable without their icons.
 - Requested removals are gone. Every claim is supported by the product,
-  including claims that arrived in the brief or were already live.
+  including claims that arrived in the brief or were already live, judged
+  sentence by sentence as a visitor reads it: a list followed by a place
+  claims the place for the whole list.
 - Product graphics are built from the real editor, shell, chat, panels and
   controls. Simplified to clarify, never to invent. A UI with no real capture
   is named in text, not drawn.
@@ -33,8 +35,13 @@ record where it is, what is wrong, what is expected, the evidence, and the fix.
 - Clipping is not "fixed" by disabling containment everywhere.
 - Adjacent graphics share dimensions and framing.
 - Step graphics: each a different, settled moment; a frame caught
-  mid-transition, or reused from another step or the demo, is a defect.
+  mid-transition, or reused from another step or the demo, is a defect, and
+  disclosing the reuse does not clear it.
 - The frame shows what its caption names. If it cannot, the caption changes.
+- One project per page: every graphic shows the same palette, names and app.
+- The smallest label in every graphic is readable at the size shown; shrink
+  is not a crop. A graphic that fills a column is the same width as its
+  neighbours.
 - At narrow widths, padding shrinks before content does.
 
 ## Readability and themes
