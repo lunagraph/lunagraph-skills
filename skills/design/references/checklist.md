@@ -13,8 +13,8 @@ record where it is, what is wrong, what is expected, the evidence, and the fix.
   sentence by sentence as a visitor reads it: a list followed by a place
   claims the place for the whole list.
 - Product graphics are built from the real editor, shell, chat, panels and
-  controls. Simplified to clarify, never to invent. A UI with no real capture
-  is named in text, not drawn.
+  controls, built from their real source. Simplified to clarify, never to
+  invent. A graphic that does not exist yet is made, not substituted.
 - Variants are compared against the user's job, not novelty.
 
 ## Identity

@@ -45,8 +45,14 @@ Six lines, in the chat, from the request, the product and the codebase:
   controls, behaviour or claims.
 - **Preserve.** Approved work, the user's own edits, handwritten todos.
 - **Graphic or text.** Which areas get a graphic and what each one says. A
-  missing "text only" label is not permission to invent a graphic. A product
-  UI that exists in no real capture is named in text, never drawn.
+  missing "text only" label is not permission to invent a graphic. A graphic
+  the work needs that does not exist yet is yours to make: a demo animation,
+  a step frame, a panel in the state the story needs. Build product UI from
+  its real source, the component code, its copy and its tokens, never from
+  memory or a description. Only when no source can be found is it named in
+  text instead. When the graphic moves, follow the `animate` skill's
+  storyboard-first steps for it; do not reuse a frame that shows something
+  else because it already exists.
 - **Claims.** Every factual claim the page will make, each traced to where it
   is true in the product: a file, a screen, a capture. Claims handed to you in
   the brief, and copy already live on the site, are checked the same way; a
@@ -97,8 +103,8 @@ A "done" message is not evidence. Screenshot the result and go through
 - Each step graphic shows its own settled moment: no two steps share a
   frame, none repeats the demo, no frame is caught mid-transition, and each
   frame shows the thing its caption names, or the caption changes. Saying
-  that a frame is reused does not make the reuse acceptable; crop a
-  different part, pick another moment, or change the step.
+  that a frame is reused does not make the reuse acceptable; make the frame
+  the step needs.
 - Every graphic on a page shows the same project: one palette, one set of
   names, one app. A real capture beside a story frame of a different palette
   is a defect, even if each is real on its own.
