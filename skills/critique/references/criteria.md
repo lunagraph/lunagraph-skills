@@ -66,8 +66,8 @@ behaviour; regression safety; evidence quality.
 
 Tested with realistic data on the affected routes, including setup,
 permission, loading, empty, error and recovery paths. Controls reachable at
-every relevant size. For a UI PR, genuine production-before and
-localhost-after captures at matched conditions, labelled.
+every relevant size. For a UI PR, genuine before and after captures at
+matched conditions, labelled with environment.
 
 ## Usability
 

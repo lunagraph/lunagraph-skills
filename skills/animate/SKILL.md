@@ -1,6 +1,6 @@
 ---
 name: animate
-description: Storyboard, animate and verify a product animation or motion graphic on the Lunagraph canvas, for a website or an exported video. Use for launch videos, feature stories, transitions, pacing, loops, playback controls and motion polish. Storyboards before motion, always. For static design use design, for critique use critique.
+description: Storyboard, animate and verify a product animation or motion graphic on the Lunagraph canvas, for a website or an exported video. Use for launch videos, feature stories, transitions, pacing, loops, playback controls and motion polish. Storyboards before motion, always. The design skill uses this one for animations inside a page or product design; for critique use critique.
 ---
 
 # Animate
@@ -12,7 +12,7 @@ you animate it.
 
 Same as the `design` skill. With Lunagraph's canvas tools in the session
 (always in a Lunagraph chat; in a terminal agent with the `lunagraph` plugin
-whenever the desktop app is open, after `project_pick`), load Lunagraph's
+whenever the desktop app is open, after `project_list` and `project_pick`), load Lunagraph's
 `lunagraph-use` skill and the design skill it names when they are listed,
 otherwise follow the server's instructions and tool descriptions, and draw. If the tools
 are listed but fail to connect, ask the user to open Lunagraph. Without them,
@@ -78,8 +78,8 @@ Test the delivery: fidelity, file size, loading, playback, and the formats
 that are actually supported. Offer downloads only for those. Say which
 requested formats are not available.
 
-Score each criterion in [references/criteria.md](references/criteria.md) with
-evidence. Deliver the reviewed animation, the storyboard it came from and its
+Go through the criteria in [references/criteria.md](references/criteria.md)
+and mark each passed, open or not tested, with evidence. Deliver the reviewed animation, the storyboard it came from and its
 location, representative frames or a recording, the timing and export details,
 tested conditions, and open issues. A reusable review and export controller is
 a proposal for the user, not something to build on the side.

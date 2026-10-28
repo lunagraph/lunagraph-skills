@@ -10,7 +10,7 @@ agent cannot quietly skip the part where it looks at what it made.
 
 | Skill | What it does |
 | --- | --- |
-| [`design`](skills/design/SKILL.md) | Designs a website, product UI, graphic, design system or prototype on the canvas. Writes a six-line brief first, draws two or three meaningfully different directions, picks one, and reviews it against a checklist before calling it done. |
+| [`design`](skills/design/SKILL.md) | Designs a website, product UI, graphic, design system or prototype on the canvas. Writes a short brief first, draws two or three meaningfully different directions for new work, picks one, traces every product claim, and reviews it against a checklist before calling it done. |
 | [`animate`](skills/animate/SKILL.md) | Storyboards a product story on the canvas, with a caption per beat, before anything moves. Then plans transitions, animates, inspects the in-between frames and the loop seam, and verifies the exports that are actually supported. |
 | [`critique`](skills/critique/SKILL.md) | Reviews an existing design, animation, prototype or running UI from rendered evidence and scores it criterion by criterion. Never edits anything. |
 | [`implement`](skills/implement/SKILL.md) | Builds a reviewed canvas design in your codebase with your components and tokens, then verifies the running app: routes, states, themes, a width sweep, and real before-and-after captures for a PR. |
@@ -52,6 +52,10 @@ git clone https://github.com/lunagraph/lunagraph-skills
 cp -R lunagraph-skills/skills/* ~/.claude/skills/
 ```
 
+Installed this way the skills are plain `design`, `animate`, `critique` and
+`implement`. If you already have skills with those names, rename the folder and
+the `name` in its `SKILL.md`.
+
 ## Use
 
 ```
@@ -77,4 +81,13 @@ running app.
 Each skill is a folder under `skills/` with a `SKILL.md`: YAML frontmatter
 (`name`, `description`) followed by the instructions. The folder name must match
 `name`. Under `references/` each skill carries the visual checklist and the
-rating criteria it uses, so it can be installed on its own.
+criteria it uses, so it can be installed on its own.
+
+The visual checklist is shared. Edit `skills/design/references/checklist.md`,
+then run `scripts/sync-references.sh` to copy it into the other skills.
+
+`evals/` holds test cases for the skills, outside `skills/` so they are not
+installed with them. They run against Lunagraph's own repositories, so they are
+mainly useful to the Lunagraph team. Bump `version` in
+`.claude-plugin/plugin.json` with every change to a skill, or plugin installs
+will not pick it up.

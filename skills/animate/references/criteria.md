@@ -1,25 +1,23 @@
 # Criteria
 
-Score each criterion separately out of 10 when you finish. Record score,
-observation, evidence, remaining issue, next action. **Not tested** when there
-is no evidence, **not applicable** only with a reason.
-
-- **1–3** the objective fails. **4–6** the idea works, big gaps remain.
-- **7–8** usable, specific defects left. **9** one refinement or check left.
-- **10** every agreed check passed in the tested scope. Nothing more.
+Pick every section that applies before you start. When you finish, mark each
+criterion **passed**, **open** or **not tested**, with the observation and the
+evidence; **not applicable** only with a reason. These are your own checks, not
+a grade: passed means you saw it work in the tested scope, open names what is
+left and the next action. Never mark something passed to finish; an open
+critical check stays open whatever else passed.
 
 ## Animated graphic
 
-**Rate:** story and punchline; product fidelity; continuity and pacing;
+**Check:** story and punchline; product fidelity; continuity and pacing;
 legibility; controls and delivery performance.
 
 **Story.** Job, message, storyline and the one or two takeaways are written
 down before any frame. For a multi-agent story, the caller, the designer, the
 shared artifact, the visible result and the feedback path are all on screen.
-Example: if the value is that one agent can ask another to design in
-Lunagraph, show the first agent asking, the second visibly designing, the
-canvas changing, and the reply in the same thread. A sequence of tool calls
-alone shows nothing.
+Example: if the value is that a teammate can hand work to someone else, show
+the request, the other person visibly doing the work, the result changing,
+and the reply coming back. A sequence of tool calls alone shows nothing.
 
 **Planning.** A labelled planning storyboard with beat captions exists on the
 canvas before motion, and was inspected for the takeaway and the payoff.

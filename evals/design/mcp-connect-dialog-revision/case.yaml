@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: mcp-connect-dialog-revision
+expected_outcome: |
+  Two or three meaningfully different redesigns of the Connect external MCP
+  agent dialog on the canvas, built from the real McpConnectModal (its tabs,
+  commands, server URL and status dot, the editor's tokens), with the current
+  dialog reproduced for comparison. The Claude Code path is the most prominent
+  and a connected state is shown. No control or status is invented that the
+  product cannot back: a "connected" state is either traced to something the
+  app can actually detect or clearly marked as a proposal. One direction is
+  chosen with reasons. No code is changed.

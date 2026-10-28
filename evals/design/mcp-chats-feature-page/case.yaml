@@ -1,0 +1,13 @@
+schema_version: "1.1"
+name: mcp-chats-feature-page
+expected_outcome: |
+  A full feature page for "Start and steer chats from any MCP client" on the
+  canvas, at desktop 1440 and phone 390, following the live feature-page
+  system (nav and footer as on the live site). The demo is a new animation made
+  for this page, storyboarded first, built from the real product UI (the
+  sidebar chat panel, an external MCP client's call, the chat appearing in the
+  sidebar), not the existing mcp-chats figure and not an email story. Each
+  "How it works" step has its own graphic. Every claim on the page traces to
+  the code (sidebarChat.ts chat_models / chat_context / chat_send / chat_read,
+  McpConnectModal, the agents-v2 sidebar requirement); unverifiable claims are
+  cut or marked to confirm. A claim table is delivered.
