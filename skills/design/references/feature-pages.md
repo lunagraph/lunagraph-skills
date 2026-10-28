@@ -22,8 +22,8 @@ behind, and a stale nav ships quietly. The live site wins.
   animation when the feature is a sequence of actions, which most are.
 - Storyboard it with the `animate` skill before building it.
 - It is a capture of the product, built from the product's real components.
-  A stage made for another medium, such as an email or video story with its
-  own title band, eyebrow or player, never appears inside it.
+  Framing made for another medium, such as an email header, a video player
+  or a slide title, never appears inside it.
 - On a phone, it is the same demo scaled to the column. If it is unreadable at
   that size, change what the demo shows on every width, rather than cropping
   away the part that explains it.

@@ -41,8 +41,9 @@ designing for a person and a purpose instead of for the brief's wording.
   graphic the design calls for is yours to make, demo animations included.
   An existing frame that shows something else is not a stand-in, however
   convenient.
-- **Claims.** Every factual statement the design will make, each traced to
-  where it is true in the product: a file, a screen, a capture.
+- **Claims.** If the design states facts about the product (most marketing,
+  docs and onboarding do), list each one and trace it to where it is true in
+  the product: a file, a screen, a capture.
 
 Claims get their own check because they are where designs go wrong without
 anyone noticing. Briefs are written from memory and live copy goes stale, so a
@@ -55,11 +56,13 @@ Otherwise state your assumption and go.
 
 ## 2. Make it
 
-Put two or three **meaningfully different** directions side by side, each
-named: different story, hierarchy or composition, not one layout in three
-colours. Compare them against the takeaway, say which wins and why, then
-develop that one. Leave the others on the canvas so the user can see what was
-considered.
+For a new design, or whenever the user asks to explore, put two or three
+**meaningfully different** directions side by side, each named: different
+story, hierarchy or composition, not one layout in three colours. Compare them
+against the takeaway, say which wins and why, then develop that one. Leave the
+others on the canvas so the user can see what was considered. A revision of a
+direction that is already chosen, or a small polish, goes straight to the
+change.
 
 **Make the graphics, from real source.** A product graphic is only persuasive
 if it is the product. Build editor panels, dialogs and controls from their
@@ -67,8 +70,9 @@ source: the component code, its copy and its tokens. Never draw them from
 memory or a description; an invented control is a promise the product does not
 keep. When a graphic moves, follow the `animate` skill for it, storyboard
 first, and put the result in the design. Write any component files you need in
-a folder of your own, and never edit shared components to fit the design: show
-the user the impact and let them decide.
+a new folder in the Lunagraph project (for example `components/<feature>/`),
+and never edit shared components to fit the design: show the user the impact
+and let them decide.
 
 **One project throughout.** Every graphic on a page shows the same app, data
 and palette, so the page tells one story.
@@ -103,17 +107,19 @@ the person in the brief would see it. The full list is in
 - **Prototypes:** state what it tests, make the key task clickable, and have a
   fresh sub-agent try it with the goal but no click path.
 
-Fix what you find, then recheck the fix and what sits next to it. Score the
-criteria in [references/criteria.md](references/criteria.md) with evidence. A
-failed critical check stays failed whatever the other scores are.
+Fix what you find, then recheck the fix and what sits next to it. Go through
+the criteria in [references/criteria.md](references/criteria.md) that apply
+and mark each passed, open or not tested, with evidence. An open critical
+check stays open; it is not outweighed by everything else passing.
 
 ## 4. Deliver
 
 - The page, the frame names and element ids, and any files you wrote.
 - The chosen direction and why, and the references it follows.
-- The claim table: each claim and its source, or "to confirm".
+- If the design makes claims, the claim table: each claim and its source, or
+  "to confirm".
 - What you checked: widths, themes, states, and how.
-- The scorecard and every open decision.
+- The criteria results and every open decision.
 
 Do not imply the design is implemented, approved or deployed. Code is the
 `implement` skill's job.

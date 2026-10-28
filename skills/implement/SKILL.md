@@ -17,7 +17,7 @@ prove the running result matches it.
   get it designed there, then build the revised version. Do not invent the
   visual answer in code. With Lunagraph's canvas tools in the session (a
   Lunagraph chat, or a terminal agent with the `lunagraph` plugin and the
-  desktop app open, after `project_pick`), load `lunagraph-use` and
+  desktop app open, after `project_list` and `project_pick`), load `lunagraph-use` and
   Lunagraph's `lunagraph-implement` skill when they are listed; they teach
   reading the canvas and the codebase's conventions. Otherwise read the
   design with `canvas_read` and `take_screenshot` and follow the repo's own
@@ -68,20 +68,21 @@ performance. Then run the app and look, with
   review controls, supported exports.
 - Prototypes: a fresh sub-agent attempts the task with the goal and no click
   path. Fix and retest.
-- For a UI PR, capture genuine production-before and localhost-after
-  screenshots at the same route, viewport, theme, state and comparable data,
-  labelled with environment and time. Never substitute. If production is out
-  of reach, label the baseline you have and leave that comparison incomplete.
+- For a UI PR, capture genuine before (production, or the base branch
+  running) and after (your branch running) screenshots at the same route,
+  viewport, theme, state and comparable data, labelled with environment and
+  time. Never substitute. If the baseline is out of reach, label the one you
+  have and leave that comparison incomplete.
 
-Score the criteria in [references/criteria.md](references/criteria.md) with
-evidence. Recheck every fix and every shared-component consumer. Untested is
+Go through the criteria in [references/criteria.md](references/criteria.md)
+and mark each passed, open or not tested, with evidence. Recheck every fix and every shared-component consumer. Untested is
 not passed.
 
 ## 4. Deliver
 
 What changed, the canvas version it implements, references, evidence, tested
 routes, widths, themes and states, check results and measurements, the
-scorecard, PR or preview links that you actually opened, and the decisions
+criteria results, PR or preview links that you actually opened, and the decisions
 still open. An unreachable preview is not verified. Stop when the scope is
 verified or a named blocker (access, capability, authority, a human decision)
 prevents it.

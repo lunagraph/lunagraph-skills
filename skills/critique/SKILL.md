@@ -15,10 +15,11 @@ Look at the real thing, say what is wrong and where, score it, stop.
   the findings to `design`, `animate` or `implement`.
 - **Rendered evidence only.** Screenshots the user supplied, the canvas
   through Lunagraph's tools, or a running preview. Source code alone is not
-  evidence of how something looks. Open Lunagraph only to reach the canvas you
-  were asked about; with the `lunagraph` plugin and the desktop app open, bind
-  the file with `project_pick` and read it with `canvas_read` and
-  `take_screenshot`.
+  evidence of how something looks. To review a canvas, read it through
+  Lunagraph's tools: with the `lunagraph` plugin and the desktop app open,
+  bind the file with `project_list` and `project_pick`, then use
+  `canvas_read` and `take_screenshot`. Never click through the app's UI to
+  reach it.
 - **Do not take the designer's word.** A "done" reply, a self-score, or a
   plausible list of tool calls proves nothing. Neither does your own
   walkthrough prove that a human can use it.
@@ -51,12 +52,13 @@ work. In addition:
 - **Prototypes.** Give a fresh sub-agent a realistic goal and the context,
   not the click path. Record hesitation, wrong turns, recovery, completion.
 - **Running implementations.** Cover the affected routes and real
-  interactions. For a UI PR, compare genuine production-before and
-  localhost-after captures at matched route, viewport, theme, state and
-  comparable data, labelled with environment and time. If production is out
-  of reach, say so and leave that comparison incomplete.
-- **Copy.** Direct, specific, skimmable. No AI jargon, filler eyebrows, em
-  dashes, forced slang.
+  interactions. For a UI PR, compare genuine before (production or the base
+  branch) and after (the branch under review) captures at matched route,
+  viewport, theme, state and comparable data, labelled with environment and
+  time. If the baseline is out of reach, say so and leave that comparison
+  incomplete.
+- **Copy.** Direct, specific, skimmable. No jargon, filler labels or forced
+  slang.
 
 Rate whether the audience gets the benefit separately from whether the shell
 is drawn correctly. Both can fail independently.

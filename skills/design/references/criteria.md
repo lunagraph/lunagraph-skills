@@ -1,16 +1,11 @@
 # Criteria
 
-Pick every section that applies before you start, and score each criterion
-separately out of 10 when you finish. Record score, observation, evidence,
-remaining issue, next action. Use **not tested** when there is no evidence and
-**not applicable** only with a reason.
-
-- **1–3** the objective fails. **4–6** the idea works, big gaps remain.
-- **7–8** usable, specific defects left. **9** one refinement or check left.
-- **10** every agreed check passed in the tested scope. Nothing more.
-
-Iterate on the evidence, not the number. A blocker you cannot clear stays open;
-do not inflate the score to finish.
+Pick every section that applies before you start. When you finish, mark each
+criterion **passed**, **open** or **not tested**, with the observation and the
+evidence; **not applicable** only with a reason. These are your own checks, not
+a grade: passed means you saw it work in the tested scope, open names what is
+left and the next action. Never mark something passed to finish; an open
+critical check stays open whatever else passed.
 
 ## Shared gate
 
@@ -23,7 +18,7 @@ listed.
 
 ## Website layout
 
-**Rate:** message and hierarchy; copy; design-system fidelity; responsive
+**Check:** message and hierarchy; copy; design-system fidelity; responsive
 continuity; accessibility and navigation.
 
 A visitor skims the page and knows the value and the next action. Copy is
@@ -33,7 +28,7 @@ in both themes.
 
 ## Static graphic
 
-**Rate:** message clarity; actual-UI fidelity; brand consistency; composition
+**Check:** message clarity; actual-UI fidelity; brand consistency; composition
 and geometry; responsiveness.
 
 The graphic communicates the feature and benefit on its own. Every shell, panel
@@ -42,7 +37,7 @@ product, nothing more. Adjacent graphics share framing. No unintended clipping.
 
 ## Product UI and UX
 
-**Rate:** job completion; discoverability; interaction cost; pattern
+**Check:** job completion; discoverability; interaction cost; pattern
 consistency; state handling and accessibility.
 
 Users know where to start and what happened. Actions are not hidden behind
@@ -52,7 +47,7 @@ setup, empty, loading, error and success states.
 
 ## Responsive
 
-**Rate:** continuity across widths; readable content; geometry; usable
+**Check:** continuity across widths; readable content; geometry; usable
 controls; theme and state consistency.
 
 Narrow to wide and back on every affected page. Dense samples and a disclosed
@@ -61,7 +56,7 @@ image bounds, popovers, every target.
 
 ## Design system and components
 
-**Rate:** reuse; token and geometry consistency; API and state coverage;
+**Check:** reuse; token and geometry consistency; API and state coverage;
 accessibility; change impact.
 
 Read the repo's guidance, tokens and existing components before proposing a
@@ -70,7 +65,7 @@ change, show the affected consumers.
 
 ## Prototype
 
-**Rate:** testable hypothesis; realistic interaction; representative states;
+**Check:** testable hypothesis; realistic interaction; representative states;
 learnability; iteration value.
 
 State what it tests. The key task is executable, with representative data and

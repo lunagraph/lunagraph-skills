@@ -1,17 +1,15 @@
 # Criteria
 
-Score each criterion separately out of 10 when you finish. Record score,
-observation, evidence, tested conditions, remaining issue, next action.
-**Not tested** when there is no evidence, **not applicable** only with a
-reason.
-
-- **1–3** the objective fails. **4–6** the idea works, big gaps remain.
-- **7–8** usable, specific defects left. **9** one refinement or check left.
-- **10** every agreed check passed in the tested scope. Nothing more.
+Pick every section that applies before you start. When you finish, mark each
+criterion **passed**, **open** or **not tested**, with the observation and the
+evidence; **not applicable** only with a reason. These are your own checks, not
+a grade: passed means you saw it work in the tested scope, open names what is
+left and the next action. Never mark something passed to finish; an open
+critical check stays open whatever else passed.
 
 ## Implementing to code
 
-**Rate:** design fidelity; idiomatic structure; component reuse; functional
+**Check:** design fidelity; idiomatic structure; component reuse; functional
 coverage; performance.
 
 Right repo, its rules followed. Existing components reused, no duplication, no
@@ -21,28 +19,28 @@ found during implementation went back to the canvas.
 
 ## Implementation review
 
-**Rate:** design parity; responsive and theme correctness; end-to-end
+**Check:** design parity; responsive and theme correctness; end-to-end
 behaviour; regression safety; evidence quality.
 
 Running app tested with realistic data on every affected route, including
 setup, permission, loading, empty, error and recovery. Controls reachable at
-every relevant size. UI PRs compared with genuine production-before and
-localhost-after captures at matched conditions, labelled. Missing production
-access stated, not papered over.
+every relevant size. UI PRs compared with genuine before and after captures
+at matched conditions, labelled with environment. A missing baseline is
+stated, not papered over.
 
 ## Responsive
 
-**Rate:** continuity across widths; readable content; geometry; usable
+**Check:** continuity across widths; readable content; geometry; usable
 controls; theme and state consistency.
 
 ## Code to canvas
 
-**Rate:** source fidelity; editability; component identity; state fidelity;
+**Check:** source fidelity; editability; component identity; state fidelity;
 safe round trip.
 
 ## Product UI and UX
 
-**Rate:** job completion; discoverability; interaction cost; pattern
+**Check:** job completion; discoverability; interaction cost; pattern
 consistency; state handling and accessibility.
 
 ## Animated graphic
